@@ -1,0 +1,17 @@
+.magic {
+    background-color: blueviolet;
+    margin: 10px;
+    height: auto;
+    width: 500px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: justify;
+    padding: 15px;
+    box-shadow: 10px 10px 5px rgb(44, 9, 74);
+    font-style: normal;
+}
+
+#in_a_line {
+    display: flex;
+}
