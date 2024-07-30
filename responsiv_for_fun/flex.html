@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container_2{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;  
+        }
+        .item_type_1 {
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid red;
+        }
+        .item_type_2{
+            width: 40vw;
+            height: 20vh;
+            border: 2px solid green;
+        }
+        @media screen and (max-width : 800px) {
+            .container_2 {
+                display: flex;
+                /* flex-direction: column-reverse; */
+                flex-grow: calc(100% - 50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item_type_1">
+            <h1>item-1</h1>
+            <p>hasnat</p>
+        </div>
+        <div class="item_type_1">
+            <h1>item-2</h1>
+            <p>hasnat</p>
+        </div>
+        <div class="item_type_1">
+            <h1>item-3</h1>
+            <p>hasnat</p>
+        </div>
+        <div class="item_type_1">
+            <h1>item-4</h1>
+            <p>hasnat</p>
+        </div>
+        <div class="item_type_1">
+            <h1>item-5</h1>
+            <p>hasnat</p>
+        </div>
+    </div>
+    <div class="container_2">
+        <div class="item_type_2">
+            <h1>item no - 1</h1>
+            <p>hello</p>
+        </div>
+        <div class="item_type_2">
+            <h1>item no - 2</h1>
+            <p>hello</p>
+        </div>
+        <div class="item_type_2">
+            <h1>item no - 3</h1>
+            <p>hello</p>
+        </div>
+        <div class="item_type_2">
+            <h1>item no - 4</h1>
+            <p>hello</p>
+        </div>
+        <div class="item_type_2">
+            <h1>item no - 5</h1>
+            <p>hello</p>
+        </div>
+        <div class="item_type_2">
+            <h1>item no - 6</h1>
+            <p>hello</p>
+        </div>
+    </div>
+</body>
+</html>
