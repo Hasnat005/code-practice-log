@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+
+    <h1 id="countdown">30</h1>
+
+    <script>
+        // Initial countdown value
+        let count = 30;
+
+        // Function to update the countdown every second
+        const countdown = setInterval(function() {
+            // Update the display
+            document.getElementById("countdown").innerText = count;
+
+            // Decrement the count
+            count--;
+
+            // Stop the countdown when it reaches 0
+            if (count < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerText = "Time's up!";
+            }
+        }, 1000);  // The countdown interval is 1 second (1000 milliseconds)
+    </script>
+
+</body>
+</html>
